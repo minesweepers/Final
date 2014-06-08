@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{035C7134-0F99-4BC2-AD8C-7F62BC99FE49}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcApplication2</RootNamespace>
+    <AssemblyName>MvcApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bicol.aspx.cs">
+      <DependentUpon>bicol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bicol.aspx.designer.cs">
+      <DependentUpon>bicol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cebu.aspx.cs">
+      <DependentUpon>cebu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cebu.aspx.designer.cs">
+      <DependentUpon>cebu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agusandelnorte.aspx.cs">
+      <DependentUpon>agusandelnorte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agusandelnorte.aspx.designer.cs">
+      <DependentUpon>agusandelnorte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BeInvolved.aspx.cs">
+      <DependentUpon>BeInvolved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeInvolved.aspx.designer.cs">
+      <DependentUpon>BeInvolved.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ecoTourism1.aspx.cs">
+      <DependentUpon>ecoTourism1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecoTourism1.aspx.designer.cs">
+      <DependentUpon>ecoTourism1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ecoTourism2.aspx.cs">
+      <DependentUpon>ecoTourism2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecoTourism2.aspx.designer.cs">
+      <DependentUpon>ecoTourism2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ecoTourism3.aspx.cs">
+      <DependentUpon>ecoTourism3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecoTourism3.aspx.designer.cs">
+      <DependentUpon>ecoTourism3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetFile.aspx.cs">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetFile.aspx.designer.cs">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="negrosoccidental.aspx.cs">
+      <DependentUpon>negrosoccidental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="negrosoccidental.aspx.designer.cs">
+      <DependentUpon>negrosoccidental.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="palawan.aspx.cs">
+      <DependentUpon>palawan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="palawan.aspx.designer.cs">
+      <DependentUpon>palawan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio.aspx.cs">
+      <DependentUpon>portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio.aspx.designer.cs">
+      <DependentUpon>portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="surigaodelnorte.aspx.cs">
+      <DependentUpon>surigaodelnorte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="surigaodelnorte.aspx.designer.cs">
+      <DependentUpon>surigaodelnorte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ecoTourism.aspx.cs">
+      <DependentUpon>ecoTourism.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecoTourism.aspx.designer.cs">
+      <DependentUpon>ecoTourism.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\FileUtilities.cs" />
+    <Compile Include="UploadSuccessful.aspx.cs">
+      <DependentUpon>UploadSuccessful.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadSuccessful.aspx.designer.cs">
+      <DependentUpon>UploadSuccessful.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="waystohelp.aspx.cs">
+      <DependentUpon>waystohelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="waystohelp.aspx.designer.cs">
+      <DependentUpon>waystohelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="whatcanyoudo.aspx.cs">
+      <DependentUpon>whatcanyoudo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="whatcanyoudo.aspx.designer.cs">
+      <DependentUpon>whatcanyoudo.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="bicol.aspx" />
+    <Content Include="cebu.aspx" />
+    <Content Include="agusandelnorte.aspx" />
+    <Content Include="BeInvolved.aspx" />
+    <Content Include="ecoTourism1.aspx" />
+    <Content Include="ecoTourism2.aspx" />
+    <Content Include="ecoTourism3.aspx" />
+    <Content Include="GetFile.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\50ways\1.jpg" />
+    <Content Include="images\50ways\10.jpg" />
+    <Content Include="images\50ways\11.jpg" />
+    <Content Include="images\50ways\12.jpg" />
+    <Content Include="images\50ways\13.jpg" />
+    <Content Include="images\50ways\14.jpg" />
+    <Content Include="images\50ways\15.jpg" />
+    <Content Include="images\50ways\16.jpg" />
+    <Content Include="images\50ways\17.jpg" />
+    <Content Include="images\50ways\18.jpg" />
+    <Content Include="images\50ways\19.jpg" />
+    <Content Include="images\50ways\2.jpg" />
+    <Content Include="images\50ways\20.jpg" />
+    <Content Include="images\50ways\21.jpg" />
+    <Content Include="images\50ways\22.jpg" />
+    <Content Include="images\50ways\23.jpg" />
+    <Content Include="images\50ways\24.jpg" />
+    <Content Include="images\50ways\25.jpg" />
+    <Content Include="images\50ways\26.jpg" />
+    <Content Include="images\50ways\27.jpg" />
+    <Content Include="images\50ways\28.jpg" />
+    <Content Include="images\50ways\29.jpg" />
+    <Content Include="images\50ways\3.jpg" />
+    <Content Include="images\50ways\30.jpg" />
+    <Content Include="images\50ways\31.jpg" />
+    <Content Include="images\50ways\32.jpg" />
+    <Content Include="images\50ways\33.jpg" />
+    <Content Include="images\50ways\34.jpg" />
+    <Content Include="images\50ways\35.jpg" />
+    <Content Include="images\50ways\36.jpg" />
+    <Content Include="images\50ways\37.jpg" />
+    <Content Include="images\50ways\38.jpg" />
+    <Content Include="images\50ways\39.jpg" />
+    <Content Include="images\50ways\4.jpg" />
+    <Content Include="images\50ways\40.jpg" />
+    <Content Include="images\50ways\41.jpg" />
+    <Content Include="images\50ways\42.jpg" />
+    <Content Include="images\50ways\43.jpg" />
+    <Content Include="images\50ways\44.jpg" />
+    <Content Include="images\50ways\45.jpg" />
+    <Content Include="images\50ways\46.jpg" />
+    <Content Include="images\50ways\47.jpg" />
+    <Content Include="images\50ways\48.jpg" />
+    <Content Include="images\50ways\49.jpg" />
+    <Content Include="images\50ways\5.jpg" />
+    <Content Include="images\50ways\50.jpg" />
+    <Content Include="images\50ways\51.jpg" />
+    <Content Include="images\50ways\6.jpg" />
+    <Content Include="images\50ways\7.jpg" />
+    <Content Include="images\50ways\8.jpg" />
+    <Content Include="images\50ways\9.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte10.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte2.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte3.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte4.jpg" />
+    <Content Include="images\agusandelnorte\agusandelnorte9.jpg" />
+    <Content Include="images\bicol\bicol.jpg" />
+    <Content Include="images\bicol\bicol10.jpg" />
+    <Content Include="images\bicol\bicol2.jpg" />
+    <Content Include="images\bicol\bicol3.jpg" />
+    <Content Include="images\bicol\bicol4.JPG" />
+    <Content Include="images\bicol\bicol5.JPG" />
+    <Content Include="images\bicol\bicol7.jpg" />
+    <Content Include="images\bicol\bicol8.jpg" />
+    <Content Include="images\bicol\bicol9.jpg" />
+    <Content Include="images\cebu\cebu.jpg" />
+    <Content Include="images\cebu\cebu2.jpg" />
+    <Content Include="images\cebu\cebu3.jpg" />
+    <Content Include="images\cebu\cebu4.jpg" />
+    <Content Include="images\cebu\cebu5.jpg" />
+    <Content Include="images\cebu\cebu7.jpg" />
+    <Content Include="images\cebu\cebu8.jpg" />
+    <Content Include="images\cebu\cebu9.jpg" />
+    <Content Include="images\ecoTourism\cebu.jpg" />
+    <Content Include="images\ecoTourism\cebu2.JPG" />
+    <Content Include="images\ecoTourism\cebu3.jpg" />
+    <Content Include="images\ecoTourism\tubbataha2.jpg" />
+    <Content Include="images\ecoTourism\tubbataha3.jpg" />
+    <Content Include="images\ecoTourism\tubbatahareef.jpg" />
+    <Content Include="images\ecoTourism\undergroundriver.jpg" />
+    <Content Include="images\ecoTourism\undergroundriver2.jpg" />
+    <Content Include="images\ecoTourism\undergroundriver3.jpg" />
+    <Content Include="images\fbicon.png" />
+    <Content Include="images\negrosoccidental\negrosoccidental.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental2.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental3.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental4.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental5.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental7.JPG" />
+    <Content Include="images\negrosoccidental\negrosoccidental8.jpg" />
+    <Content Include="images\negrosoccidental\negrosoccidental9.jpg" />
+    <Content Include="images\palawan\palawan.JPG" />
+    <Content Include="images\palawan\palawan20.jpg" />
+    <Content Include="images\palawan\palawan2.jpg" />
+    <Content Include="images\palawan\palawan3.jpg" />
+    <Content Include="images\palawan\palawan4.jpg" />
+    <Content Include="images\palawan\palawan5.jpg" />
+    <Content Include="images\palawan\palawan17.jpeg" />
+    <Content Include="images\palawan\palawan18.jpg" />
+    <Content Include="images\palawan\palawan19.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte10.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte2.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte3.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte4.JPG" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte5.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte7.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte8.jpg" />
+    <Content Include="images\surigaodelnorte\surigaodelnorte9.jpg" />
+    <Content Include="images\twittericonnew.png" />
+    <Content Include="negrosoccidental.aspx" />
+    <Content Include="palawan.aspx" />
+    <Content Include="portfolio.aspx" />
+    <Content Include="Scripts\1.jpg" />
+    <Content Include="Scripts\2.jpg" />
+    <Content Include="Scripts\3.jpg" />
+    <Content Include="Scripts\blog01.jpg" />
+    <Content Include="Scripts\bootstrap.css" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\hover.zoom.conf.js" />
+    <Content Include="Scripts\hover.zoom.js" />
+    <Content Include="Scripts\loader.gif" />
+    <Content Include="Scripts\main.css" />
+    <Content Include="Scripts\minesweeperlogo.png" />
+    <Content Include="Scripts\minesweeperlogo2.png" />
+    <Content Include="Scripts\Slider.css" />
+    <Content Include="Scripts\Slider.js" />
+    <Content Include="Scripts\user.png" />
+    <Content Include="Scripts\zoom.png" />
+    <Content Include="home.aspx" />
+    <Content Include="surigaodelnorte.aspx" />
+    <Content Include="ecoTourism.aspx" />
+    <Content Include="waystohelp.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="UploadSuccessful.aspx" />
+    <Content Include="whatcanyoudo.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <None Include="Scripts\glyphicons-halflings-regular.eot" />
+    <None Include="Scripts\glyphicons-halflings-regular.ttf" />
+    <None Include="Scripts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1796</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
